@@ -6,6 +6,10 @@
   position: relative;
 }
 
+body {
+	background-color: #fff;
+}
+
 .register div {
 	margin-top: 0.533333rem;
 }

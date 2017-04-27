@@ -22,7 +22,7 @@
 				<div>
 					<label class="text-in" for="Phone">Phone</label>
 					<input type="text" class="Phone-input"  data-required="true" data-descriptions="telphone" data-pattern="^0?1[3|4|7|5|8][0-9]\d{8}$"  id="inputPhone" placeholder="Please enter phone number">
-					<input type="button" id="sendcode" class="send-code" value="Send Code">				
+					<input type="button" id="codeBtn" class="send-code" value="Send Code">				
 				</div>
 				<div>
 					<label class="text-in" for="Code">Code</label>
@@ -126,6 +126,32 @@
 	        }
         });  		
   	});
+  </script>
+  <script>
+  	  	var codeBtn = document.getElementById('codeBtn');
+		var countdown=60;   
+		function settime(obj) {   
+		    if (countdown == 0) {   
+		        obj.removeAttribute("disabled");      
+		        obj.value="Send code";
+		        obj.style.backgroundColor = "#f6442b"; 
+		        obj.style.color = "#fff";   
+		        countdown = 60;   
+		        return;  
+		    } else {   
+		        obj.setAttribute("disabled", true);
+		        obj.style.backgroundColor = "#ccc"; 
+		        obj.style.color = "#000";   
+		        obj.value="resend after " + countdown;   
+		        countdown--;   
+		    }   
+		setTimeout(function() {   
+		    settime(obj) }  
+		    ,1000)   
+		}
+		codeBtn.onclick = function() {
+	 		settime(this);
+		}
   </script>
 </body>
 </html>

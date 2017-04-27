@@ -14,11 +14,15 @@
 	margin-top: 1.333333rem;
 }
 
-.register div .text-info {
+.register div .text-in {
 	display: inline-block;
 	width: 23%;
 	height: 0.8rem;
 	line-height: 0.8rem;
+}
+
+.register label {
+	font-weight: 400;
 }
 
 .register div .Phone-input {
@@ -38,6 +42,7 @@
 	color: #fff;
 	border-radius: 0.106667rem;
 	width: 22%;
+	font-size: 0.266667rem;
 }
 
 .register div .input-info {

@@ -70,20 +70,3 @@ body {
 	border-radius: 0.106667rem;
 	background-color: #f6442b;
 }
-
-input::-webkit-input-placeholder {
-　color: #e3e3e3;
-	font-size: 0.32rem;
-}
-input:-moz-placeholder {
-　color: #e3e3e3;
-	font-size: 0.32rem;
-}
-input::-moz-placeholder {
-　color: #e3e3e3;
-	font-size: 0.32rem;
-}
-nput:-ms-input-placeholder {
-　color: #e3e3e3;
-	font-size: 0.32rem;
-}

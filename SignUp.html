@@ -30,11 +30,11 @@
 				</div>
 				<div>
 					<label class="text-in" for="Username">Username</label>
-					<input type="text" name="Username" class="input-info" data-required="true" data-descriptions="username" id="Username" placeholder="Please enter the 6-16 characters" />					
+					<input type="text" name="Username" class="input-info" data-required="true" data-pattern="^[a-zA-z]\w{3,15}$" data-descriptions="username" id="Username" placeholder="Please enter the 6-16 characters" />					
 				</div>
 				<div>
 					<label class="text-in" for="Password">Password</label>
-					<input type="password" name="Password" class="input-info" data-required="true" data-descriptions="Password" data-pattern=""  id="Password" placeholder="Please enter the 6-20 characters" />					
+					<input type="password" name="Password" class="input-info" data-required="true" data-descriptions="Password" data-pattern="^(\w){6,20}$"  id="Password" placeholder="Please enter the 6-20 characters" />					
 				</div>		
 				<div>
 					<label class="text-in" for="Female">Gender</label>
@@ -45,7 +45,7 @@
 				</div>
 				<div>
 					<label class="text-in" for="Email">Email</label>
-					<input type="text" name="Email" class="input-info" id="Email" data-pattern="" data-required="true" data-descriptions="email" placeholder="Please enter a valid email address." />			
+					<input type="text" name="Email" class="input-info" id="Email" data-pattern="^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$" data-required="true" data-descriptions="email" placeholder="Please enter a valid email address." />			
 				</div>	
 				<div>
 					<input class="sign-up" type="submit" value="Sign up">		
@@ -100,11 +100,13 @@
 	        },
 	        descriptions: {
 	            username: {
-	              required: '请输入用户名'
+	              required: '请输入用户名',
+	              pattern: '字母、数字、下划线组成，字母开头，4-16位。'
+
 	            },
 	            Password: {
 	            	required: '请输入密码',
-	            	pattern: '密码为长度在6~18之间，只能包含字符，数字，下划线'
+	            	pattern: '密码为6-20个字母、数字、下划线 '
 	            }, 
 	            telphone: {
 	                required: '请输入手机号码',

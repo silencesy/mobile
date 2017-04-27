@@ -1,0 +1,52 @@
+body {
+	background-color: #eee;
+}
+
+.layout{
+  min-width: 4.0rem;
+  max-width: 10.0rem; 
+  margin: 0.8rem auto;
+  position: relative;
+}
+
+.sc-footer {
+	height: 1.066667rem;
+	border-top: 1px solid #DCDCDC;
+	border-bottom: 2px solid #EEEEEE;
+}
+
+.login-content {
+	padding: 0.933333rem 0.733333rem 0 0.733333rem;
+	text-align: center;
+}
+
+.login-content img {
+	width: 0.853333rem;
+	height: 0.853333rem;
+}
+
+.login-content .login {
+	width: 7.066667rem;
+	height: 0.933333rem;
+	font-size: 0.48rem;
+	color: #fff;
+	background-color: #f6442b;
+	border-width: 0;
+	outline: none;
+	cursor: pointer;
+	margin-top: 0.8rem;
+	border-radius: 0.106667rem;
+}
+
+.login-content .Sign-up {
+	width: 7.066667rem;
+	height: 0.933333rem;
+	font-size: 0.48rem;
+	color: #f6442b;
+	margin-top: 0.666667rem;
+	border: 1px solid #f6442b;
+	border-radius: 0.106667rem;
+	outline: none;
+	background-color: #eee;
+	cursor: pointer;
+}
